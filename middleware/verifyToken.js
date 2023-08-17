@@ -26,9 +26,9 @@ const verifyToken = (req, res, next) => {
 
                 'Invalid token'
         });
-        req.admin = {}
-        req.admin.id = decoded.idadmin
-        req.admin.role = decoded.role
+        req.employee = {}
+        req.employee.id = decoded.idemployee
+        req.employee.role = decoded.role
         next()
     })
 }
