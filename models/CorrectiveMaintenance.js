@@ -4,8 +4,8 @@ const Machine =require("./machine.js");
 const Employee =require("./employee.js");
 const CorrectiveMaintenanceSchema = new mongoose.Schema(
   {
-    CorrectiveMaintenance: [
-      {
+   
+   
         machineID: {
           type: mongoose.Schema.ObjectId,
           ref: Machine,
@@ -18,18 +18,16 @@ const CorrectiveMaintenanceSchema = new mongoose.Schema(
           type: mongoose.Schema.ObjectId,
           ref: Employee,
         },
-        dateStart: Date,
-        dateEnd: Date,
+        dateStart: String,
+        dateEnd: String,
         status:String,
         description:String,
         cost:Number,
         breakTime:Number,
         failureCause:String,
-        dateCall:Date,
+        dateCall:String,
         callOffBy:String,
 
-      },
-    ],
    
    
   },

@@ -30,7 +30,7 @@ const employeeSchema = new mongoose.Schema(
 
       role: {
         type: String,
-        enum: [ "engineer","technician"],
+        enum: [ "Admin","Manager","User"],
         required: true,
     }, 
 

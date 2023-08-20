@@ -34,8 +34,8 @@ app.get("/", (req, res) => {
 });
 app.use('/api/departments', departmentRouter);
 app.use('/api/machines', machineRouter);
-app.use('/api/corrMains', correctiveMaintenanceRouter);
-app.use('/api/prevMains', preventiveMaintenanceRouter);
+app.use('/api/correctives', correctiveMaintenanceRouter);
+app.use('/api/preventives', preventiveMaintenanceRouter);
 app.use('/api/employees', employeeRouter);
 
 app.listen(process.env.PORT, () => {

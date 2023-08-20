@@ -4,8 +4,7 @@ const Machine =require("./machine.js");
 const Employee =require("./employee.js");
 const PreventiveMaintenanceSchema = new mongoose.Schema(
   {
-    PreventiveMaintenance: [
-      {
+    
         machineID: {
           type: mongoose.Schema.ObjectId,
           ref: Machine,
@@ -25,8 +24,7 @@ const PreventiveMaintenanceSchema = new mongoose.Schema(
         cost:Number,
         breakTime:Number
 
-      },
-    ],
+   
    
    
   },
